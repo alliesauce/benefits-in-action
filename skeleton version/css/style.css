@@ -1,0 +1,66 @@
+/*sitewide skeleton overrides*/
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+a {
+  text-decoration: none
+}
+
+a:hover {
+  color: #F58021;
+}
+
+
+/*navigation*/
+nav.primary {
+  font-size: 0.82em;
+  color: #11A3D9;
+  text-align: right;
+}
+
+nav.primary ul {
+  border-bottom: 1px dotted #7F7F7F;
+  border-top: 1px dotted #7F7F7F;
+  padding: 0.5em;
+}
+
+nav.primary ul,
+nav.primary ul li {
+  margin: 0px;
+  float: right;
+  text-decoration: none;
+}
+
+nav.primary select {
+  /*display: none;
+  width:  100%;
+  height: 28px;
+  margin: 21px 0;*/
+}
+
+nav.primary ul li {
+  display: inline;
+  float: left;
+  border-right: 1px solid #7F7F7F;
+  padding: 0 .25em;
+  /*position: relative;*/
+}
+
+nav.primary ul li a {
+  /*display: inline-block;*/
+  /*line-height: 49px;*/
+  padding:  0 1em;
+  letter-spacing: 0.08em;
+}
+
+nav.primary ul li a:hover {
+  /*color: #F58021;*/
+/*  background: #424242;
+  cursor: pointer;*/
+}
+
+nav.primary li:last-child  { border: 0; }  /* remove the pipe from the last list item */
+
+
+
