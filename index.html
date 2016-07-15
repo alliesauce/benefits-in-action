@@ -3,14 +3,11 @@
   <head>
     <!-- Basic Page Needs
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
     <title>Benefits in Action</title>
     <meta name="description" content="A Colorad-based organization dedicated to improving the understanding, access, and utilization of healthcare. We provide free services for individuals as well as paid services for employers.">
     <meta name="author" content="Alli Barnes">
-
-    <!-- Mobile Specific Metas
-    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- IMPORT FONTS
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -19,10 +16,9 @@
 
     <!-- CSS
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/skeleton.css">
-    <link rel="stylesheet" href="css/style.css">
-
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 
     <!-- Favicon
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -32,38 +28,47 @@
 
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <div class="container" id="nav">
-    <div class="row">
-      <div class="twelve columns" style="margin-top: 10%">
-        <nav class="primary navigation">
-          <ul>
-              <li><a href="#">HOME</a></li>
-              <li><a href="#">ABOUT US</a></li>
-              <li><a href="#">EDUCATION</a></li>
-              <li><a href="#">NAVIGATION</a></li>
-              <li><a href="#">APPLICATION ASSISTANCE</a></li>
-              <li><a href="#">BEACON</a></li>
-              <li><a href="#">CONTACT</a></li>
-            </ul>
-          </nav>
-      </div>
-    </div>
-  </div>
+    <!-- Dropdown Structure -->
+    <ul id="dropdown1" class="dropdown-content">
+      <li><a href="#!">ABOUT US</a></li>
+      <li><a href="#!">BOARD OF DIRECTORS</a></li>
+      <li><a href="#!">STAFF</a></li>
+      <li><a href="#!">PARTNERS</a></li>
+    </ul>
 
-  <div class="container">
-    <div class="row">
-      <div class="twelve columns">
-        <h4>Basic Page</h4>
-        <p>This index.html page is a placeholder with the CSS, font and favicon. It's just waiting for you to add some content! If you need some help hit up the <a href="http://www.getskeleton.com">Skeleton documentation</a>.</p>
-      </div>
-    </div>
-  </div>
+    <div class="navbar-fixed">
+      <nav class="white" role="navigation">
+        <div class="nav-wrapper container">
+          <a id="logo-container" href="#!" class="brand-logo"></a>
+          <ul class="right hide-on-med-and-down">
+            <!-- Dropdown Trigger -->
+            <li><a class="dropdown-button" href="#!" data-activates="dropdown1">ABOUT US<i class="material-icons right">arrow_drop_down</i></a></li>
+            <li><a href="#">EDUCATION</a></li>
+            <li><a href="#">NAVIGATION</a></li>
+            <li><a href="#">APPLICATION ASSISTANCE</a></li>
+            <li><a href="#">WORKPLACE ASSISTANCE</a></li>
+            <li><a href="#">RESOURCES</a></li>
+            <li><a href="#">CONTACT</a></li>
+          </ul>
 
+          <ul id="nav-mobile" class="side-nav">
+            <li><a href="#">ABOUT US</a></li>
+            <li><a href="#">EDUCATION</a></li>
+            <li><a href="#">NAVIGATION</a></li>
+            <li><a href="#">APPLICATION ASSISTANCE</a></li>
+            <li><a href="#">BEACON</a></li>
+            <li><a href="#">RESOURCES</a></li>
+            <li><a href="#">CONTACT</a></li>
+          </ul>
+          <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+        </div> <!-- end nav-wrapper container -->
+      </nav>
+    </div> <!-- end navbar fixed -->
 
 
     <!--Import Script-->
     <script type="text/javascript" src="js/jquery.js"></script>
-    <script src="js/script.js"></script>
-
+    <script src="js/materialize.js"></script>
+    <script src="js/init.js"></script>
   </body>
 </html>

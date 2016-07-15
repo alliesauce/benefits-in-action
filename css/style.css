@@ -6,9 +6,65 @@
  * Made By MaterializeCSS.com
  */
 
-nav ul a,
+/*PAGE WIDE CHANGES */
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: #F58021;
+}
+
+/*NAVBAR*/
+
+nav ul a{
+  font-size: 0.8em;
+  color: #11A3D9;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  min-width: 96px;
+}
+
+nav ul li {
+  max-width: 96px;
+  line-height: 15px;
+  padding-top: 35px;
+  padding-right: 2px;
+  padding-left: 2px;
+  text-align: center;
+}
+
+.dropdown-content li > a, .dropdown-content li > span {
+    font-size: 0.82em;
+    color: #F58021;
+    display: block;
+    line-height: 1em;
+    /*padding: 14px 16px;*/
+}
+
+.dropdown-content li {
+  padding: none;
+  line-height: 0.82em;
+}
+
+/*a#logo-container.brand-logo,*/
 nav .brand-logo {
-  color: #444;
+  background: url("../images/Benefits-In-Action_Logo-Graphic.png");
+  background-repeat: no-repeat;
+  min-width: 243px;
+  max-width: 243px;
+  min-height: 100px;
+  max-height: 100px;
+}
+
+nav.white {
+  min-height: 100px;
 }
 
 p {
